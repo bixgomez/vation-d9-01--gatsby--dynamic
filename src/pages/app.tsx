@@ -5,7 +5,7 @@ import { Router as MyRouter } from "@reach/router"
 const Router = () => {
   return (
     <MyRouter>
-      <RandomPerson path="/app/random-person/:results" />
+      <RandomPerson path="/app/random-person/" />
     </MyRouter>
   )
 }

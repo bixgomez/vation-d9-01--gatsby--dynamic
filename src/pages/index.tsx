@@ -3,7 +3,7 @@ import Link from "gatsby-link"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Button } from "src/components/Button/Button"
+import { Button } from "../components/Button/Button"
 
 const IndexPage = () => (
   <Layout>
