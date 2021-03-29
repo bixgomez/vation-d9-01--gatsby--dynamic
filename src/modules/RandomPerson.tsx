@@ -15,6 +15,7 @@ export const RandomPerson: FC<Props> = ({ results = 1 }) => {
 
   return (
     <div>
+      {  }
       <pre>{JSON.stringify(person, null, 2)}</pre>
     </div>
   )
