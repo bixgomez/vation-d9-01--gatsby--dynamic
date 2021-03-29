@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 const Company = ({ data }) => {
   const company = data.nodeCompany
-  
+
   return (
     <Layout>
       <h1>{company.title}</h1>
