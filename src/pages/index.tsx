@@ -18,7 +18,7 @@ const IndexPage = () => (
       }}
       label="Log out"
     />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/app/random-person">View a random person</Link>
   </Layout>
 )
 
