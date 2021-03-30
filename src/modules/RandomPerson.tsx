@@ -7,6 +7,7 @@ type Props = RouteComponentProps<{
 
 export const RandomPerson: FC<Props> = ({ results = 1 }) => {
   const [person, setPerson] = useState()
+
   useEffect(() => {
     fetch(`https://randomuser.me/api?results=${results}`)
       .then((x) => x.json())
@@ -15,8 +16,9 @@ export const RandomPerson: FC<Props> = ({ results = 1 }) => {
 
   return (
     <div>
-      {  }
+      {console.log(person)}
       <pre>{JSON.stringify(person, null, 2)}</pre>
     </div>
   )
 }
+
