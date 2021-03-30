@@ -18,6 +18,9 @@ const Company = ({ data }) => {
       <div dangerouslySetInnerHTML={{ __html: company.body.processed }} />
       <hr />
       <h3>I would like to insert the name of a random person here.</h3>
+      <Link to="/app/random-person/">
+        You could also just go to random person
+      </Link>
       <hr />
     </Layout>
   )
