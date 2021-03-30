@@ -27,7 +27,7 @@ export const RandomPerson: FC<Props> = ({ results = 1 }) => {
         {/*  {person.location.country}<br />*/}
         {/*</h3>*/}
       </div>
-      <pre>{JSON.stringify(person, null, 2)}</pre>
+      {/*<pre>{JSON.stringify(person, null, 2)}</pre>*/}
     </>
   )
 }

@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-
 import { RandomPerson } from "../modules/RandomPerson"
 import { Router as MyRouter } from "@reach/router"
+
+import Layout from "../components/layout"
 
 const Router = () => {
   return (

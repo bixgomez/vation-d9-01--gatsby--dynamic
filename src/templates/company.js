@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Link from "gatsby-link"
+import { RandomPerson } from "../modules/RandomPerson"
+import { Router as MyRouter } from "@reach/router"
 
 import Layout from "../components/layout"
 
@@ -14,6 +16,9 @@ const Company = ({ data }) => {
         <Link to="/companies">List of companies.</Link>
       </p>
       <div dangerouslySetInnerHTML={{ __html: company.body.processed }} />
+      <hr />
+      <h3>I would like to insert the name of a random person here.</h3>
+      <hr />
     </Layout>
   )
 }
