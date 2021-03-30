@@ -6,12 +6,7 @@ interface Props {
 }
 
 const Header: FunctionComponent<Props> = ({ siteTitle = "" }: Props) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
