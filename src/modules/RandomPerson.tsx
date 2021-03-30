@@ -6,19 +6,19 @@ type Props = RouteComponentProps<{
 }>
 
 export const RandomPerson: FC<Props> = ({ results = 1 }) => {
-  const [person, setPerson] = useState()
+  const [person, setPerson] = React.useState({ name: "test" })
 
   useEffect(() => {
-    fetch(`https://randomuser.me/api?results=${results}`)
-      .then((x) => x.json())
-      .then((x) => setPerson(x))
-  }, [results])
+    fetch(`https://randomuser.me/api?results=${1}`)
+      .then((data) => data.json())
+      .then((json) => setPerson(json.results[0]))
+  }, [])
 
   return (
-    <div>
-      {console.log(person)}
-      <pre>{JSON.stringify(person, null, 2)}</pre>
-    </div>
+    <>
+      <h1>
+        {person.name.first} {person.name.last}
+      </h1>
+    </>
   )
 }
-
